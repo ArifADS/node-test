@@ -35,7 +35,7 @@ mongoose.connect('mongodb://arifads:1234@ds019628.mlab.com:19628/alamofire-db');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
-   console.log('Successfully mongodb is connected');
+   console.log('Successfully mongodb is connected.');
 });
 
 app.get('/todo',todoRoute.index);
